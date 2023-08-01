@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteWeek6Servicenow">
+<parameter name="url" value="https://dev177220.service-now.com/"></parameter>
+<parameter name="userName" value="admin"></parameter>
+<parameter name="passWord" value="pooRoja@55"></parameter>
+
+  <test thread-count="5" name="TestWeek6ServicenowEdge" verbose="5">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="week6.day2.assignment.seviceNow.CreateNewIncidentServiceNowWeek6"/>
+      <class name="week6.day2.assignment.seviceNow.AssignIncidentServiceNowWeek6"/>
+      <class name="week6.day2.assignment.seviceNow.UpdateIncidentDynamicExcel"/>
+    </classes>
+  </test> <!-- TestWeek6Servicenow -->
+  
+  <test thread-count="5" name="TestWeek6ServicenowChrome" verbose="5">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="week6.day2.assignment.seviceNow.UpdateExistingIncidentServiceNowWeek6"/>
+      <class name="week6.day2.assignment.seviceNow.UpdateInidentDynamicParameterization"/>
+      <class name="week6.day2.assignment.seviceNow.DeleteIncidentServiceNowWeek6"/>
+    </classes>
+  </test> <!-- TestWeek6Servicenow -->
+</suite> <!-- SuiteWeek6Servicenow -->
