@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuitePOM">
+  <test thread-count="5" name="TestPOM" verbose="5">
+    <classes>
+      <class name="testcases.VerifyCreateLead"/>
+      <class name="testcases.VerifyEditLead"/>
+      <class name="testcases.VerifyDuplicateLead"/>
+      <class name="testcases.VerifyMergeLead"/>
+      <class name="testcases.VerifyDeleteLead"/>
+    </classes>
+  </test> <!-- TestPOM -->
+</suite> <!-- SuitePOM -->
