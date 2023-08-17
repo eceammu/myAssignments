@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="SuiteLastMarathon">
+  <test thread-count="2" parallel="classes" name="TestLastMarathon" verbose="5">
+    <classes>
+      <class name="week9.Marathon.testcase.VerifyCreateIndividualTestcase"/>
+      <class name="week9.Marathon.testcase.VerifyEditIndividualsTestcase"/>
+      <class name="week9.Marathon.testcase.VerifyDeleteIndividualsSalesforce"/>
+    </classes>
+  </test> <!-- TestLastMarathon -->
+</suite> <!-- SuiteLastMarathon -->
